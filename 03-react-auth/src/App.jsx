@@ -1,12 +1,16 @@
-import './App.css'
+import { BrowserRouter } from 'react-router-dom'
 import Header from '@/components/Header'
+import RoutesIndex from '@/routes/RoutesIndex'
+import './App.css'
 
 function App() {
 
   return (
     <>
+    <BrowserRouter>
       <Header />
-      <h1>React Auth</h1>
+      <RoutesIndex />
+    </BrowserRouter>
     </>
   )
 }
