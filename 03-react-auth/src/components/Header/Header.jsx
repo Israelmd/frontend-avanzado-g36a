@@ -19,7 +19,7 @@ const Header = () => {
                 <a href='/login' className='header__item-link'>Login</a>
             </li>
             <li className='header__list-item'>
-                <a href='/register' className='header__item-link'>Signup</a>
+                <a href='/signup' className='header__item-link'>Signup</a>
             </li>
         </ul>
     </nav>
