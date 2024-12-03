@@ -158,6 +158,16 @@ Próximamente...
 
 <br />
 
+## Recursos
+- [Sitio Oficial JWT](https://jwt.io/)
+- [Base64 Decode](https://www.base64decode.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Ejemplo de Login: Bootstrap](https://getbootstrap.com/docs/5.3/examples/sign-in/)
+- [Transform Tools: HTML to JSX](https://transform.tools/html-to-jsx)
+- [Formulario Base de Signup](https://gist.github.com/warderer/10c5c2c8d826a85d81702738327aff67#file-signup-jsx)
+
+<br />
+
 # 5. Autenticación II
 ## Objetivos
 - Implementarás un sistema funcional de autenticación que permita a los usuarios iniciar sesión en una aplicación React.
