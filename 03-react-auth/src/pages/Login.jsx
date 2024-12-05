@@ -1,9 +1,11 @@
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import { loginUserService } from '@/services/userServices'
+import { useAuthContext } from '@/hooks/useAuth'
 import '@/styles/form.css'
 import logo from '@/assets/react.svg'
 const Login = () => {
+  const { login } = useAuthContext()
   const navigate = useNavigate()
 
   const {
@@ -17,9 +19,7 @@ const Login = () => {
       const { status, data } = await loginUserService(formData)
       // console.log(data.token)
       if (status === 200) {
-        // Guardamos el token en el localStorage del navegador
-        // Este dato permanece aún si el navegador se cierra.
-        window.localStorage.setItem('token', data.token)
+        login(data.token)
         navigate('/dashboard')
       }
     } catch (error) {
