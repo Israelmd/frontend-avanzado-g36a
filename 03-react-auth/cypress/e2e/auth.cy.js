@@ -15,12 +15,13 @@ describe('Funcionalidad de Login', () => {
     cy.visit('/login')
 
     // 02. Act: Interactuar con la app (realizar acciones)
-    cy.get('input[type="email"]')
-      .type('drstrange@marvel.com')
-    cy.get('input[type="password"]')
-      .type('multiverso')
+    cy.login('drstrange@marvel.com','multiverso')
+    // cy.get('input[type="email"]')
+    //   .type('drstrange@marvel.com')
+    // cy.get('input[type="password"]')
+    //   .type('multiverso')
 
-    cy.get('button[type="submit"]')
+    // cy.get('button[type="submit"]')
       .click()
     cy.wait('@login')
 
@@ -35,13 +36,14 @@ describe('Funcionalidad de Login', () => {
     cy.visit('/login')
 
     // 02. Act: Interactuar con la app (realizar acciones)
-    cy.get('input[type="email"]')
-      .type('superman@dc.com')
-    cy.get('input[type="password"]')
-      .type('superman')
+    cy.login('superman@dc.com','superman')
+    // cy.get('input[type="email"]')
+    //   .type('superman@dc.com')
+    // cy.get('input[type="password"]')
+    //   .type('superman')
 
-    cy.get('button[type="submit"]')
-      .click()
+    // cy.get('button[type="submit"]')
+    //   .click()
     cy.wait('@login')
 
     cy.get('nav > ul li:last')
